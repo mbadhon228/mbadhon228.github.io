@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The personal website of Md. Al Imran Badhon.">
+  <meta name="author" content="Md. Al Imran Badhon">
+  <meta name="theme-color" content="#f7f8fa">
+  <title>Md. Al Imran Badhon | Personal Website</title>
+  <style>
+    :root { color-scheme: light; --ink:#202733; --muted:#667085; --line:#e7eaf0; --paper:#fff; --bg:#f7f8fa; --accent:#315b8a; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Arial, Helvetica, sans-serif; color:var(--ink); background:var(--bg); line-height:1.65; }
+    .wrap { width:min(900px, calc(100% - 32px)); margin:0 auto; }
+    header { padding:22px 0; border-bottom:1px solid var(--line); background:rgba(255,255,255,.8); }
+    nav { display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap; }
+    .brand { font-weight:700; letter-spacing:.2px; }
+    nav a { color:var(--muted); text-decoration:none; margin-left:18px; font-size:14px; }
+    nav a:hover, .links a:hover { color:var(--accent); }
+    main { padding:76px 0 48px; }
+    .hero { background:var(--paper); border:1px solid var(--line); border-radius:18px; padding:42px; display:flex; align-items:center; gap:28px; }
+    .avatar { width:112px; height:112px; flex:0 0 112px; border-radius:50%; display:grid; place-items:center; background:#e9eef5; color:var(--accent); font-size:34px; font-weight:700; }
+    .eyebrow { color:var(--accent); font-size:12px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; }
+    h1 { font-size:clamp(30px,5vw,44px); line-height:1.15; margin:8px 0 12px; }
+    .intro { color:var(--muted); margin:0; max-width:580px; }
+    section { margin-top:22px; padding:30px 32px; background:var(--paper); border:1px solid var(--line); border-radius:18px; }
+    h2 { font-size:20px; margin:0 0 10px; }
+    section p { color:var(--muted); margin:0; }
+    .links { display:flex; flex-wrap:wrap; gap:12px; margin-top:18px; }
+    .links a { display:inline-block; padding:10px 16px; border:1px solid var(--line); border-radius:9px; color:var(--ink); text-decoration:none; font-size:14px; background:#fff; }
+    footer { padding:28px 0 36px; color:var(--muted); text-align:center; font-size:13px; }
+    @media (max-width:600px) {
+      main { padding-top:36px; }
+      .hero { padding:28px 22px; flex-direction:column; align-items:flex-start; }
+      section { padding:24px 22px; }
+      nav a { margin-left:10px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav aria-label="Main navigation">
+        <div class="brand">Al Imran Badhon</div>
+        <div><a href="#about">About</a><a href="#social">Social</a></div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="hero">
+      <div class="avatar" aria-label="Initials avatar">AB</div>
+      <div>
+        <div class="eyebrow">Personal Website</div>
+        <h1>Md. Al Imran Badhon</h1>
+        <p class="intro">Welcome to my personal website. This is a simple space to share a little about me and connect through my public social profiles.</p>
+      </div>
+    </div>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hello! I'm Md. Al Imran Badhon. Thanks for visiting my website. I'll share more about my interests, activities and work here soon.</p>
+    </section>
+
+    <section id="social">
+      <h2>Find Me Online</h2>
+      <p>You can visit my public social profiles using the links below.</p>
+      <div class="links">
+        <a href="https://www.facebook.com/Mbadhon228" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://www.instagram.com/mbadhon228/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year">2026</span> Md. Al Imran Badhon
+  </footer>
+</body>
+</html>
